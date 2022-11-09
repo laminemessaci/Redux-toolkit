@@ -45,10 +45,16 @@ function Connter() {
         value={incrementAmount}
         onChange={(e) => setIncrementAmount(e.target.value)}
       />
-      <div>
+      <div style={{ margin: 20 }}>
         <button onClick={() => dispatch(incrementByAmount(addValue))}>
           Add Amount
         </button>
+        <button onClick={() => dispatch(decrementByAmount(addValue))}>
+          Reduce Amount
+        </button>
+      </div>
+      <div style={{ margin: 20 }}>
+        <button onClick={() => dispatch(reset())}>Reset </button>
       </div>
     </section>
   );
