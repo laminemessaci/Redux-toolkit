@@ -54,7 +54,7 @@ function Connter() {
         </button>
       </div>
       <div style={{ margin: 20 }}>
-        <button onClick={() => dispatch(reset())}>Reset </button>
+        <button onClick={() => dispatch(resetAll())}>Reset </button>
       </div>
     </section>
   );
